@@ -1,7 +1,7 @@
 import React from 'react';
 
 const MainContainer = () => {
-  return <div>t1est</div>;
+  return <div>main</div>;
 };
 
 export default MainContainer;
