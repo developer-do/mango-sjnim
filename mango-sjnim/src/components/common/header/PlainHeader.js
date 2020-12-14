@@ -2,6 +2,8 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 import logo from 'images/logo.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSortNumericDown } from '@fortawesome/free-solid-svg-icons';
 
 const PlainHeader = () => {
   return (
@@ -13,6 +15,7 @@ const PlainHeader = () => {
       </div>
       <div className="main__header">
         <NavLink to="/" className="header__list an">
+          <FontAwesomeIcon icon={faSortNumericDown} />
           <span>상품순위조회</span>
         </NavLink>
         <NavLink to="/search" className="header__list an">
