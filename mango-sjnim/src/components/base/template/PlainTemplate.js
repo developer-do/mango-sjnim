@@ -14,14 +14,14 @@ const PlainTemplate = (props) => {
 const Styled = {
   Header: styled.div`
     position: fixed;
-    width: 200px;
+    width: 260px;
     height: 100vh;
     left: 0;
     top: 0;
-    background-color: #262626;
+    background-color: #34495e;
   `,
   Main: styled.div`
-    padding-left: 200px;
+    padding-left: 260px;
   `,
 };
 

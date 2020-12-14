@@ -2,18 +2,18 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 import logo from 'images/logo.png';
-import { ImSortNumericAsc } from 'react-icons/im';
 
 const PlainHeader = () => {
   return (
     <Styled.PlainHeader>
-      <div className="main__header">
-        <NavLink to="/" className="header__list an">
+      <div className="main__logo">
+        <NavLink to="/">
           <img src={logo} alt="logo" />
         </NavLink>
+      </div>
+      <div className="main__header">
         <NavLink to="/" className="header__list an">
-          <ImSortNumericAsc />
-          상품순위조회
+          <span>상품순위조회</span>
         </NavLink>
         <NavLink to="/search" className="header__list an">
           search
@@ -26,18 +26,19 @@ const PlainHeader = () => {
 const Styled = {
   PlainHeader: styled.div`
     text-align: center;
-    .logo__wrap {
+    .main__logo {
       margin: 10px 0;
     }
     .header__list {
       &.an {
         display: block;
-        padding: 5px 0;
+        padding: 5px;
         text-decoration: none;
         color: white;
+        transition: all 0.2s;
+
         &:hover {
-          color: white;
-          text-decoration: underline;
+          padding-left: 15px;
         }
       }
     }
