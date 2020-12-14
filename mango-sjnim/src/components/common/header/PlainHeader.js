@@ -2,6 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 import logo from 'images/logo.png';
+import { ImSortNumericAsc } from 'react-icons/im';
 
 const PlainHeader = () => {
   return (
@@ -11,7 +12,8 @@ const PlainHeader = () => {
           <img src={logo} alt="logo" />
         </NavLink>
         <NavLink to="/" className="header__list an">
-          실시간 순위조회
+          <ImSortNumericAsc />
+          상품순위조회
         </NavLink>
         <NavLink to="/search" className="header__list an">
           search
